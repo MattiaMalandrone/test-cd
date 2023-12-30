@@ -1,0 +1,8 @@
+@if(vm$ | async; as vm) {
+    <div *ngIf="vm.isLoading" [style.background-color]="'#f0f'">loading....</div>
+    <!-- <app-child></app-child> -->
+}
+--------------------------------------------------------
+<a [routerLink]="['/child']">navigate</a>
+--------------------------------------------------------
+<router-outlet></router-outlet>
